@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div class="navbar-brand">Team's Page</div>
+            <div class="navbar-brand">Proposed Solution</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#team-members">Team Members</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proposed-solution.html">Proposed Solution</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -55,34 +52,17 @@
                         Micro-mobility device theft is a common issue at UC San Diego, where limited tracking and
                         monitoring make it difficult to prevent or resolve stolen e-scooters and bikes.
                     </p>
+                    Our proposed solution will combine the advantages of the existing solutions mentioned above.
+                    It will have a GPS tag to detect location, a gyroscope/accelerometer to detect motion, an alarm to
+                    notify nearby people that the device is stolen, and a camera + motor to capture the thief's faces.
+                    We plan to use the ESP32 chip, which has WiFi included, so that the owner of the device can
+                    communicate with their device via network protocol using a web interface.
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- Motivation Section -->
-    <section id="motivation" class="py-4">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 col-lg-10 mx-auto">
-                    <h2 class="mb-3 text-center">Problem Motivation</h2>
-                    <ol class="text-dark">
-                        <li>We chose this issue because many students rely on personal micro-mobility devices for their
-                            daily commutes across campus. Nobody wants to walk uphill both ways with a midterm in 10
-                            minutes :( </li>
-                        <li>The growing number of thefts has created financial stress, safety concerns, and student
-                            transportation disruptions. It's a problem affecting the quality of life and
-                            trust in campus safety services.
-                        </li>
-                        <li>Maybe the owner has special connection to their micro-mobility devices. We want to prevent
-                            people from losing their beloving ones.</li>
-                    </ol>
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Solution Section -->
     <section id="solution" class="py-4">
@@ -178,6 +158,62 @@
         </div>
     </section>
 
+
+    <!-- Our Solution Section -->
+    <section id="our-solution" class="py-4">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-10 mx-auto">
+                    <h2 class="mb-3  text-center">Our Proposed Solution</h2>
+                    <li class="text-dark">
+                        Block Diagram and 3D view </br>
+                        <img class="card-img-top img-fluid m-0 mx-auto d-block" loading="lazy"
+                            src="img/block-diagram.png" alt="tracker-and-gps"
+                            style="height: 225px; width: 200px; object-fit: cover;">
+                        <img class="card-img-top img-fluid m-0 mx-auto d-block" loading="lazy" src="img/3D-view.png"
+                            alt="tracker-and-gps" style="height: 225px; width: 200px; object-fit: cover;">
+                        <ul>
+
+                            <li>How It Works:
+                                <ul>
+                                    <li>GPS tag to detect the device's location</li>
+                                    <li>Gyroscope/accelerometer to detect motion</li>
+                                    <li>Alarm to notify nearby people if the device is stolen</li>
+                                    <li>Camera + motor to capture the thief's face</li>
+                                    <li>ESP32 chip with built-in WiFi for network communication</li>
+                                    <li>Web interface for the owner to interact with the device remotely</li>
+                                </ul>
+                            </li>
+                            <li> Technologies Used
+                                <ul>
+                                    <li>GPS tag to detect the device's location</li>
+                                    <li>Gyroscope/accelerometer to detect motion</li>
+                                    <li>Alarm to notify nearby people if the device is stolen</li>
+                                    <li>Camera + motor to capture the thief's face</li>
+                                    <li>ESP32 chip with built-in WiFi for network communication</li>
+                                    <li>Web interface for the owner to interact with the device remotely</li>
+                                </ul>
+                            </li>
+
+                            <li>Strengths: </br>
+                                Real-time location tracking and potential recovery of stolen items.
+                            </li>
+                            <li>Limitations: </br>
+                                Can be removed or disabled by thieves. </br>
+                                Often dependent on battery life or cellular signal. </br>
+                                Doesn't prevent theft, only helps after the fact.
+                            </li>
+                        </ul>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- Team Members -->
     <section id="team-members" class="py-4">
         <div class="container overflow-hidden">
@@ -230,6 +266,10 @@
             </div>
         </div>
     </section>
+
+
+
+
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-5">

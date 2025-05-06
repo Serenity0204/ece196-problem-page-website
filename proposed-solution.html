@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <style>
+        html {
+            font-size: 20px; /* Default is usually 16px, increase as needed */
+        }
+    
+        body {
+            font-size: 1rem;
+        }
+    
+        h1, h2, h3, h4, h5, h6 {
+            font-size: inherit;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team's Problem Page</title>
@@ -90,64 +103,48 @@
     </section>
 
 
-    <!-- Solution Section -->
     <section id="solution" class="py-4 mt-4">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12 col-lg-10 mx-auto">
                     <h2 class="mb-3 text-center">Current Existing Solutions</h2>
-
+    
                     <!-- GPS Tags Solution -->
                     <div class="row align-items-center mb-5">
                         <div class="col-md-6 text-start">
-                            <h5 class="text-dark">GPS Tags and Trackers</h5>
+                            <h5 class="text-dark">GPS Tags & Trackers</h5>
                             <ul class="text-dark">
-                                <li><strong>How It Works:</strong><br>
-                                    Devices are attached to scooters or bikes and paired with a mobile app. If movement is detected without authorization, they can trigger alarms or send location updates.
-                                </li>
-                                <li><strong>Strengths:</strong><br>
-                                    Real-time location tracking and potential recovery of stolen items.
-                                </li>
-                                <li><strong>Limitations:</strong><br>
-                                    Can be removed or disabled by thieves.<br>
-                                    Often dependent on battery life or cellular signal.<br>
-                                    Doesn't prevent theft, only helps after the fact.
-                                </li>
+                                <li><strong>Use:</strong> Paired with an app to track location and trigger alarms.</li>
+                                <li><strong>Pros:</strong> Real-time tracking; potential recovery aid.</li>
+                                <li><strong>Cons:</strong> Can be disabled; needs battery/signal; reactive only.</li>
                             </ul>
                         </div>
                         <div class="col-md-6 text-center">
-                            <img class="img-fluid" loading="lazy" src="img/tracker-and-gps.png" alt="tracker-and-gps"
-                            style="height: 300px; width: 100%; max-width: 350px; object-fit: cover;">
+                            <img class="img-fluid" loading="lazy" src="img/tracker-and-gps.png" alt="GPS Trackers"
+                                style="height: 250px; width: 100%; max-width: 350px; object-fit: cover;">
                         </div>
                     </div>
-
+    
                     <!-- U-locks Solution -->
                     <div class="row align-items-center mb-4">
                         <div class="col-md-6 text-start">
-                            <h5 class="text-dark">U-locks and Heavy-duty Chains</h5>
+                            <h5 class="text-dark">U-locks & Chains</h5>
                             <ul class="text-dark">
-                                <li><strong>How It Works:</strong><br>
-                                    Mechanical locks secure devices to bike racks or fixed objects.
-                                </li>
-                                <li><strong>Strengths:</strong><br>
-                                    It's easy to use and widely available.
-                                </li>
-                                <li><strong>Limitations:</strong><br>
-                                    Can still be cut with tools.<br>
-                                    Do not alert users if it's being stolen.
-                                </li>
+                                <li><strong>Use:</strong> Lock devices to racks or fixed objects.</li>
+                                <li><strong>Pros:</strong> Simple, accessible, and widely used.</li>
+                                <li><strong>Cons:</strong> Can be cut; no alerts during theft.</li>
                             </ul>
                         </div>
                         <div class="col-md-6 text-center">
-                            <img class="img-fluid" loading="lazy" src="img/locks.png" alt="locks"
-                                style="max-height: 300px; width: auto;">
+                            <img class="img-fluid" loading="lazy" src="img/locks.png" alt="Locks"
+                                style="height: 250px; width: auto;">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+    
 
 
 
@@ -160,13 +157,13 @@
                     
                         <h5>Block Diagram and 3D view</h5>
                         <div class="row text-center justify-content-center my-4">
-                            <div class="col-md-6 mb-3">
-                                <img class="img-fluid" src="img/block-diagram.png" alt="Block Diagram" style="max-height: 300px; width: 100%; object-fit: contain;">
+                            <div class="col-md-8 mb-3">
+                                <img class="img-fluid" src="img/block_diagram.png" alt="Block Diagram" style="max-height: 450px; width: 100%; object-fit: contain;">
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <img class="img-fluid" src="img/3D-view.jpg" alt="3D View" style="max-height: 350px; width: 100%; object-fit: contain;">
+                            <div class="col-md-4 mb-3">
+                                <img class="img-fluid" src="img/3D-view.jpg" alt="3D View" style="max-height: 300px; width: 100%; object-fit: contain;">
                             </div>
-                        </div>
+                        </div>                        
                         
                         <h5>What the Technology Will Do</h5>
                         <ul>
@@ -231,20 +228,54 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-12 col-lg-10 mx-auto text-center">
-                    <h2 class="mb-3">Block Diagram of Technology</h2>
+                    <h2 class="mb-4">Hardware Design Overview</h2>
 
-                    <!-- Block Diagram -->
-                    <h4 class="mt-4"> System Block Diagram</h4>
-                    <img class="img-fluid my-3" src="img/block-diagram-draft.JPG" alt="System Block Diagram" style="max-height: 400px;">
+                    <div class="row justify-content-center text-center">
+                        <!-- PCB Schematic -->
+                        <div class="col-md-6 mb-4">
+                            <h5 class="mb-3">PCB Schematic</h5>
+                            <img class="img-fluid" src="img/pcb-schematic.png" alt="PCB Schematic" style="max-height: 400px; object-fit: contain; width: 100%;">
+                        </div>
 
-                    <!-- Flowchart -->
-                    <h4 class="mt-5"> System Operation Flowchart</h4>
+                        <!-- 3D PCB View -->
+                        <div class="col-md-6 mb-4">
+                            <h5 class="mb-3">3D PCB View</h5>
+                            <img class="img-fluid" src="img/3d-pcb-view.png" alt="3D PCB View" style="max-height: 400px; object-fit: contain; width: 100%;">
+                        </div>
+                    </div>
+
+                    <!-- System Operation Flowchart -->
+                    <h4 class="mt-5">System Operation Flowchart</h4>
                     <img class="img-fluid my-3" src="img/flowchart.png" alt="System Flowchart" style="max-height: 400px;">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Project Progress Links Section -->
+    <section id="progress-links" class="py-4">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-10 mx-auto text-center">
+                    <h2 class="mb-3">Project Progress Report </h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            📄 <strong>Poster:</strong>
+                            <a href="https://docs.google.com/presentation/d/1ys5hzzWaLphgVckAnee8fsdYKQkrJoYBDEZGeFM0sns/edit?usp=sharing" target="_blank" class="text-success">
+                                Google Slide (Boxed Layout)
+                            </a>
+                        </li>
+                        <li>
+                            🎬 <strong>Video:</strong>
+                            <a href="https://docs.google.com/document/d/1rE3mV2ynGUgYKaddlOlKk79rLRfTbx8xs8KHLo6T4VI/edit?usp=sharing" target="_blank" class="text-primary">
+                                Team Progress Video (Week 6)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Team Members -->

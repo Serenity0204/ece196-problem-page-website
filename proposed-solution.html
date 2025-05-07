@@ -4,14 +4,20 @@
 <head>
     <style>
         html {
-            font-size: 20px; /* Default is usually 16px, increase as needed */
+            font-size: 20px;
+            /* Default is usually 16px, increase as needed */
         }
-    
+
         body {
             font-size: 1rem;
         }
-    
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: inherit;
         }
     </style>
@@ -108,7 +114,7 @@
             <div class="row">
                 <div class="col-12 col-lg-10 mx-auto">
                     <h2 class="mb-3 text-center">Current Existing Solutions</h2>
-    
+
                     <!-- GPS Tags Solution -->
                     <div class="row align-items-center mb-5">
                         <div class="col-md-6 text-start">
@@ -124,7 +130,7 @@
                                 style="height: 250px; width: 100%; max-width: 350px; object-fit: cover;">
                         </div>
                     </div>
-    
+
                     <!-- U-locks Solution -->
                     <div class="row align-items-center mb-4">
                         <div class="col-md-6 text-start">
@@ -144,7 +150,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -154,35 +160,37 @@
             <div class="row">
                 <div class="col-12 col-lg-10 mx-auto">
                     <h2 class="mb-3  text-center">Our Proposed Solution</h2>
-                    
-                        <h5>Block Diagram and 3D view</h5>
-                        <div class="row text-center justify-content-center my-4">
-                            <div class="col-md-8 mb-3">
-                                <img class="img-fluid" src="img/block_diagram.png" alt="Block Diagram" style="max-height: 450px; width: 100%; object-fit: contain;">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <img class="img-fluid" src="img/3D-view.jpg" alt="3D View" style="max-height: 300px; width: 100%; object-fit: contain;">
-                            </div>
-                        </div>                        
-                        
-                        <h5>What the Technology Will Do</h5>
-                        <ul>
-                            <li>Detect if the micro-mobility device is moved or stolen using motion sensors</li>
-                            <li>Trigger an audible alarm in real-time when theft is detected</li>
-                            <li>Track the live GPS location of the stolen device</li>
-                            <li>Capture and upload a photo of the thief using a built-in camera</li>
-                            <li>Allow owners to monitor and control the system through a web interface</li>
-                        </ul>
-                            
-                        <h5> Technological Aspects of Solution</h5>
-                        <ul>
-                            <li>ESP32 microcontroller with built-in WiFi for communication</li>
-                            <li>Accelerometer and gyroscope module for motion detection</li>
-                            <li>GPS module for real-time tracking</li>
-                            <li>Camera module (ESP32-CAM) for facial image capture</li>
-                            <li>Web server hosted on the ESP32 for real-time monitoring</li>
-                            <li>Alarm module to alert nearby people</li>
-                        </ul>   
+
+                    <h5>Block Diagram and 3D view</h5>
+                    <div class="row text-center justify-content-center my-4">
+                        <div class="col-md-8 mb-3">
+                            <img class="img-fluid" src="img/block_diagram.png" alt="Block Diagram"
+                                style="max-height: 450px; width: 100%; object-fit: contain;">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img class="img-fluid" src="img/3D-view.jpg" alt="3D View"
+                                style="max-height: 300px; width: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <h5>What the Technology Will Do</h5>
+                    <ul>
+                        <li>Detect if the micro-mobility device is moved or stolen using motion sensors</li>
+                        <li>Trigger an audible alarm in real-time when theft is detected</li>
+                        <li>Track the live GPS location of the stolen device</li>
+                        <li>Capture and upload a photo of the thief using a built-in camera</li>
+                        <li>Allow owners to monitor and control the system through a web interface</li>
+                    </ul>
+
+                    <h5> Technological Aspects of Solution</h5>
+                    <ul>
+                        <li>ESP32 microcontroller with built-in WiFi for communication</li>
+                        <li>Accelerometer and gyroscope module for motion detection</li>
+                        <li>GPS module for real-time tracking</li>
+                        <li>Camera module (ESP32-CAM) for facial image capture</li>
+                        <li>Web server hosted on the ESP32 for real-time monitoring</li>
+                        <li>Alarm module to alert nearby people</li>
+                    </ul>
                     </li>
                 </div>
             </div>
@@ -203,19 +211,25 @@
 
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            📅 <strong>By Sunday of Week 6:</strong> We will have the main PCB board finished(PCB board with accelerometer, GPS, and alarm, with ESP32 chip).
+                            📅 <strong>By Sunday of Week 6:</strong> We will have the main PCB board finished(PCB board
+                            with accelerometer, GPS, and alarm, with ESP32 chip).
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Sunday of Week 7:</strong> We will read the microcontroller’s values about movement, alarm will be triggered and ESP32 board soldered.
+                            📅 <strong>By Sunday of Week 7:</strong> We will read the microcontroller’s values about
+                            movement, alarm will be triggered and ESP32 board soldered.
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Sunday of Week 8:</strong> We will have the web server and the web interface for users to communicate with the ESP32 microcontroller. And we will have the ESP32 Cam camera integrated (hooked up using wire) into the project.
+                            📅 <strong>By Sunday of Week 8:</strong> We will have the web server and the web interface
+                            for users to communicate with the ESP32 microcontroller. And we will have the ESP32 Cam
+                            camera integrated (hooked up using wire) into the project.
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Thurday of Week 9:</strong> We will finish the camera part of the web application and finish the computer vision part of the project(detect faces).
+                            📅 <strong>By Thurday of Week 9:</strong> We will finish the camera part of the web
+                            application and finish the computer vision part of the project(detect faces).
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Monday of Week 10:</strong> We will have the enclosure of the project modeled and 3D printed.
+                            📅 <strong>By Monday of Week 10:</strong> We will have the enclosure of the project modeled
+                            and 3D printed.
                         </li>
                     </ul>
                 </div>
@@ -234,19 +248,22 @@
                         <!-- PCB Schematic -->
                         <div class="col-md-6 mb-4">
                             <h5 class="mb-3">PCB Schematic</h5>
-                            <img class="img-fluid" src="img/pcb-schematic.png" alt="PCB Schematic" style="max-height: 400px; object-fit: contain; width: 100%;">
+                            <img class="img-fluid" src="img/pcb-schematic.PNG" alt="PCB Schematic"
+                                style="max-height: 400px; object-fit: contain; width: 100%;">
                         </div>
 
                         <!-- 3D PCB View -->
                         <div class="col-md-6 mb-4">
                             <h5 class="mb-3">3D PCB View</h5>
-                            <img class="img-fluid" src="img/3d-pcb-view.png" alt="3D PCB View" style="max-height: 400px; object-fit: contain; width: 100%;">
+                            <img class="img-fluid" src="img/3d-pcb-view.PNG" alt="3D PCB View"
+                                style="max-height: 400px; object-fit: contain; width: 100%;">
                         </div>
                     </div>
 
                     <!-- System Operation Flowchart -->
                     <h4 class="mt-5">System Operation Flowchart</h4>
-                    <img class="img-fluid my-3" src="img/flowchart.png" alt="System Flowchart" style="max-height: 400px;">
+                    <img class="img-fluid my-3" src="img/flowchart.png" alt="System Flowchart"
+                        style="max-height: 400px;">
                 </div>
             </div>
         </div>
@@ -261,13 +278,15 @@
                     <ul class="list-unstyled">
                         <li>
                             📄 <strong>Poster:</strong>
-                            <a href="https://docs.google.com/presentation/d/1ys5hzzWaLphgVckAnee8fsdYKQkrJoYBDEZGeFM0sns/edit?usp=sharing" target="_blank" class="text-success">
+                            <a href="https://docs.google.com/presentation/d/1ys5hzzWaLphgVckAnee8fsdYKQkrJoYBDEZGeFM0sns/edit?usp=sharing"
+                                target="_blank" class="text-success">
                                 Google Slide (Boxed Layout)
                             </a>
                         </li>
                         <li>
                             🎬 <strong>Video:</strong>
-                            <a href="https://docs.google.com/document/d/1rE3mV2ynGUgYKaddlOlKk79rLRfTbx8xs8KHLo6T4VI/edit?usp=sharing" target="_blank" class="text-primary">
+                            <a href="https://docs.google.com/document/d/1rE3mV2ynGUgYKaddlOlKk79rLRfTbx8xs8KHLo6T4VI/edit?usp=sharing"
+                                target="_blank" class="text-primary">
                                 Team Progress Video (Week 6)
                             </a>
                         </li>

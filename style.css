@@ -1,0 +1,144 @@
+/* Typography & Base */
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background: linear-gradient(135deg, #f0faff, #f6fbff); /* soft light blue gradient */
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 600;
+    color: #0a1e3f;
+}
+
+/* Section Enclosures - modern cyber card style */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow:
+        0 0 10px rgba(0, 187, 255, 0.05),
+        0 0 0 1px rgba(0, 187, 255, 0.05),
+        inset 0 0 10px rgba(0, 187, 255, 0.03);
+    border: 1px solid rgba(0, 187, 255, 0.1);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: #e6f3fc;
+    box-shadow:
+        0 0 20px rgba(0, 187, 255, 0.25),
+        0 0 8px rgba(0, 187, 255, 0.15),
+        inset 0 0 10px rgba(0, 187, 255, 0.05);
+    transform: translateY(-4px);
+}
+
+/* Navbar - glassy white with button-like links */
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar .navbar-brand {
+    color: #2c3e50 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Navbar links styled like buttons */
+.navbar .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2c3e50 !important;
+    padding: 0.4rem 0.9rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+    background-color: #e8f6ff;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0a1e3f !important;
+    background-color: #cceeff; /* lighter hover */
+    border-color: #99e0ff;
+    text-decoration: none;
+}
+
+/* Container padding */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border-top: 1px solid #ccc;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #009fe3;
+}
+
+/* Buttons (used anywhere else) */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: #00bbff;
+    color: #fff;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #33ccff;
+    color: #fff;
+}
+
+/* Section header styling */
+section h2, section h3, section h4, section h5 {
+    color: #007acc;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00bbff;
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+section h2:hover {
+    color: #005f99;
+    text-shadow: 0 0 8px rgba(0, 187, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}

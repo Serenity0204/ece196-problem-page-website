@@ -149,12 +149,17 @@
                     <div class="row text-center justify-content-center my-4">
                         <div class="col-md-8 mb-3">
                             <img class="img-fluid" src="img/block_diagram.png" alt="Block Diagram"
-                                style="max-height: 450px; width: 100%; object-fit: contain;">
+                                style="max-height: 500x;  object-fit: contain;">
                         </div>
                         <div class="col-md-4 mb-3">
                             <img class="img-fluid" src="img/3D-view.jpg" alt="3D View"
-                                style="max-height: 300px; width: 100%; object-fit: contain;">
+                                style="max-height: 550px; width: 100%; object-fit: contain;">
                         </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h5 class="mb-3">System Operation Flowchart</h5>
+                        <img class="img-fluid" src="img/flowchart.png" alt="System Flowchart"
+                            style="max-height: 500px; object-fit: contain;">
                     </div>
                     <!-- Emphasized Update -->
                     <div class="alert alert-info rounded-3 shadow-sm p-3 my-4" role="alert" style="background-color: #e6f7ff; border-left: 4px solid #00bbff;">
@@ -176,16 +181,37 @@
                         <li>Allow owners to monitor and control the system through a web interface</li>
                     </ul>
 
-                    <h5> Technological Aspects of Solution</h5>
+                    <h5>Technological Aspects of Solution</h5>
                     <ul>
                         <li>ESP32 microcontroller with built-in WiFi for communication</li>
                         <li>Accelerometer and gyroscope module for motion detection</li>
                         <li>GPS module for real-time tracking</li>
                         <li>Camera module (ESP32-CAM) for facial image capture</li>
-                        <li>Web server hosted on the cloud interacting with ESP32 microcontroller for real-time
-                            monitoring</li>
+                        <li>Machine learning-based face recognition using a ResNet-34 <strong>Convolutional Neural Network (CNN)</strong> to generate 128-dimensional facial embeddings for identity verification</li>
+                        <li>Web server hosted on the cloud interacting with ESP32 microcontroller for real-time monitoring</li>
                         <li>Alarm module to alert nearby people</li>
                     </ul>
+
+                    <!-- Face Recognition Explanation Card -->
+                    <div class="p-4 my-4 rounded-4 shadow-sm border border-2" style="background: #f9fcff; border-color: #8cc5db;">
+                        <h5 class="mb-3" style="color: #003b5c;">Why Face Recognition?</h5>
+                        <p>
+                            Instead of capturing every image when motion is detected, which leads to storing lots of unnecessary photos. We now use a smarter, more efficient approach.
+                        </p>
+                        <p>
+                            Our upgraded system uses <strong>face recognition</strong>, which works in two steps:
+                        </p>
+                        <ol class="ps-3">
+                            <li><strong>Step 1:</strong> Detect whether a human face is present.</li>
+                            <li><strong>Step 2:</strong> Compare that face with the owner's or their registered friends'.</li>
+                        </ol>
+                        <p>
+                            Only relevant images are saved, such as an unrecognized person tampering with the device. This helps conserve storage and improves security.
+                        </p>
+                        <p>
+                            <em>Users can also upload their friends' faces</em> so trusted people can move or retrieve the scooter without triggering alerts.
+                        </p>
+                    </div>
                     </li>
                 </div>
             </div>
@@ -210,11 +236,11 @@
                             Complete the web server, including login, register, profile, and face recognition pages. Test and ensure Wi-Fi functionality on the ESP32 development board.
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Sunday of Week 7:</strong><br>
+                            📅 <strong>By Sunday of Week 7:</strong> ✅ <em>Done</em><br>
                             Finish the main PCB board (with accelerometer, GPS, alarm, and ESP32). Deploy the web interface to allow communication with the ESP32 microcontroller.
                         </li>
                         <li class="list-group-item">
-                            📅 <strong>By Sunday of Week 8:</strong><br>
+                            📅 <strong>By Sunday of Week 8:</strong> <em>In progress</em> <br>
                             Read movement data from the microcontroller, trigger the alarm, and solder the ESP32 board. Integrate the ESP32-CAM camera into the system.
                         </li>
                         <li class="list-group-item">
@@ -228,11 +254,14 @@
                     </ul>                                        
                     <li class="list-group-item">
                         <h4>Progress Update:</h4>
-                        We finished the computer vision part and started the web part
-                        earlier than
-                        expected. We are still waiting for the hardware and components to arrive. We have tested
-                        successfully connecting WiFi using an alternative board.
-                        Our next goal will be to start assembling the PCB once it's arrived.
+                        <ul>
+                            <li>Completed computer vision module (face detection & recognition)</li>
+                            <li>Built web interface (login, register, profile)</li>
+                            <li>Successfully tested Wi-Fi connectivity using an alternate ESP32 board</li>
+                            <li>Assemble and test the main PCB</li>
+                            <li>Next step: Read movement data from the microcontroller to web, Integrate the ESP32-CAM camera into the system</li>
+                        </ul>
+
                     </li>
                 </div>
 

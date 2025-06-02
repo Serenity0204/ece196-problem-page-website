@@ -56,6 +56,16 @@ section {
     padding-right: 1rem;
 }
 
+.section-subtitle {
+    font-weight: normal;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+
 /* Footer */
 footer {
     background-color: #ffffff !important;
